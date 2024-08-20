@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    clifford: '#da373d',
+                }
+            }
+        }
+    }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="w-full h-auto">
+    <nav class="w-full h-14 bg-zinc-950 text-white flex justify-evenly px-4 items-center md:px-4">
+        <div class="text-white text-2xl font-bold">
+            <h1>healthline</h1>
+        </div>
+        <div class="flex justify-between   ">
+            <ul class=" flex justify-between text-white font-bol   ">
+                <li class=" hidden mx-[10px] cursor-pointer md:block">Health condition</li>
+                <li class=" hidden mx-[10px] cursor-pointer md:block ">discover</li>
+                <li class=" hidden mx-[10px] cursor-pointer md:block "> plan</li>
+                <li class=" hidden mx-[10px] cursor-pointer md:block">Contact</li>
+            </ul>
+        </div>
+        <div class=" hidden  md:block ">
+            <input type="text" placeholder="Search ">
+        </div>
+        <div class=" block md:hidden ">
+            <a class="text-4xl" href="#">&#8801;</a>
+        </div>
+    </nav>
+    <div class="grid w-full h-full text-center  md:grid-cols-4 gap-1 text-white relative ">
+        <!-- <div class="bg-green-600 col-start-1 col-end-5 md:col-start-1 md:col-end-5">Navebar</div> -->
+        <div class="sidebar bg-slate-600 row-span-2 md:col-span-1 col-start-1  hidden md:block font-bold flex-col gap-8 text-[30px]">Sidebar
+            <div class=" flex text-black-600 flex-col gap-4 text-[15px]">
+                <h1 class="text-black-600 text-[15px]">Heath challenges</h1>
+                <p class="text-black-600" >Breast Cancer</p>
+                <p>Women's Health</p>
+                <p>Migraine</p>
+                <p>Multiple Sclerosis (MS)</p>
+                <p>Rheumatoid Arthritis</p>
+                <p>Type 2 Diabetes</p>
+                <p>Sponsored Topics</p>
+                <p>Mental Well-Being</p>
+                <p>Alzheimer's & Dementia</p>
+                <p>Bipolar Disorder</p>
+                <p>Mental Well-Being</p>
+                <p>High Cholesterol</p>
+            </div>
+        </div>
+        <div class="bg-red-400 md:col-start-2   col-start-1 col-end-5 h-32 ">Main
+            
+        </div>
+     
+    
+        <div class="img-container  md:col-start-2 md:col-end-3 col-start-1 col-end-5 relative ">
+            <div class="overlay"></div>
+            <img class="h-full w-full object-cover" src="https://media.istockphoto.com/id/1903282248/photo/senior-medical-check-up.webp?s=2048x2048&w=is&k=20&c=iO46D9y1oPVJAIeQQwgU9GmoxuJliACGKDNAFQQHfmY=" alt="">
+        </div>
+        <div class="img1-container relative md:col-start-3 md:col-end-4  col-start-1 col-end-5 ">
+            <div class="overlay"></div>
+            <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=80&w=2047&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div class="img1-container h-full relative col-start-1 col-end-5 md:col-start-4 md:col-end-5  ">
+            <div class="overlay"></div>
+            <img class="h-full w-full object-cover" src="https://cdn.pixabay.com/photo/2016/11/14/03/05/surgery-1822458_960_720.jpg" alt="">
+        </div>
+    <table class="border-collapse border border-blue-300 w-[full] col-start-1 col-end-5 bg-slate-700 ">
+        <tr>
+            <th class="border border-blue-300">Patient Id </th>
+            <th class="border border-blue-300"> Name </th>
+            <th class="border border-blue-300">Disease</th>
+        </tr >
+        <td class="border border-blue-300 text-center">40</td>
+        <td class="border border-blue-300 text-center">Tanveer</td>
+        <td class="border border-blue-300 text-center">Asthma</td>
+        <tr>
+        <td class="border border-blue-300 text-center">50 </td>
+        <td class="border border-blue-300 text-center">Rehan</td>
+        <td class="border border-blue-300 text-center">Chronic Diseases</td></tr>
+        <tr>
+            <td class="border border-blue-300 text-center"> 60</td>
+            <td class="border border-blue-300 text-center">Usman</td>
+            <td class="border border-blue-300 text-center">Diabetes</td></tr>
+        </tr>
+        <tr>
+            <td class="border border-blue-300 text-center"> 70 </td>
+            <td class="border border-blue-300 text-center">Javeed</td>
+            <td class="border border-blue-300 text-center">Chlamydia</td></tr>
+        </tr>
+    </table>
+        <!-- <div class="col-start-1 col-end-5 bg-red-800">Footer</div> -->
+    </div>
+    <div>
+    <div class="w-full bg-black flex  justify-evenly  flex-wrap relative ">
+        <div CLASS="flex flex-col  items-center   ">
+            <button class="bg-white text-6xl rounded-full w-11  ">h</button>
+            <h1 class="text-white">HEALTHLINE MEDIA</h1>
+        </div>
+        <div class=" flex flex-col items- center justify-center flex-wrap  ">
+            <ul class=" flex gap-5 text-white  justify-center  md:flex-row">
+                <li>About</li>
+                <li>|</li>
+                <li>Carers</li>
+                <li>|</li>
+                <li>Advertise with us</li>
+            </ul>
+            <div class="flex gap-4 flex-col  items-center justify-center md:flex-row">
+                <h1 class="text-white text- xl font-bold flex-col md:flex-row ">OUR BRANDS</h1>
+                <ul class=" flex  items-center justify-center flex-col md:flex-row md:gap-2 ">
+                    <li class="text-white">
+                        Healthline
+                        <hr>
+                    </li>
+                    <li class="text-white">
+                        Medical News to day
+                        <hr>
+                    </li>
+                    <li class="text-white">
+                        Greatist
+                        <hr>
+                    </li>
+                    <li class="text-white">
+                        psych central
+                        <hr>
+                    </li>
+                    <li class="text-white">
+                        Bezzy
+                        <hr>
+                    </li>
+                    <!-- <button class="text-sky-500 w-40 h-20 border-b-2 rounded-full bg-white text-xl absolute  flex flex-col " >@ TRUST <br></button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

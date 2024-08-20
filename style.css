@@ -1,0 +1,28 @@
+
+.overlay{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left:0;
+    top:0;
+    height: 100%;
+    width:100%;
+    background-color:black;
+    display:none
+
+}
+.img-container:hover .overlay {
+   display: block;
+   opacity:0.4;
+ 
+
+}
+.img1-container:hover .overlay{
+    display:block;
+    opacity:0.4;
+}
+
+.img:hover .overlay{
+    display: block;
+    opacity:0.4;
+}

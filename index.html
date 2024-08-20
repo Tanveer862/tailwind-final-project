@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+        </script>
+        <title>Health</title>
+    </head>
+    
+    <body class="bg-white max-w-screen overflow-x-hidden">
+        <nav class="w-full h-14 bg-zinc-950 text-white flex justify-evenly px-4 items-center md:px-4">
+            <div class="text-white text-2xl font-bold">
+                <h1>healthline</h1>
+            </div>
+            <div class="flex justify-between   ">
+                <ul class=" flex justify-between text-white font-bol   ">
+                    <li class=" hidden mx-[10px] cursor-pointer md:block">Health condition</li>
+                    <li class=" hidden mx-[10px] cursor-pointer md:block ">discover</li>
+                    <li class=" hidden mx-[10px] cursor-pointer md:block "> plan</li>
+                    <li class=" hidden mx-[10px] cursor-pointer md:block">Contact</li>
+                </ul>
+            </div>
+            <div class=" hidden  md:block ">
+                <input type="text" placeholder="Search ">
+            </div>
+            <div class=" block md:hidden ">
+                <a class="text-4xl" href="#">&#8801;</a>
+            </div>
+        </nav>
+        <div class="w-full h-auto flex justify-evenly mt-10 flex-col md:flex-row  ">
+            <div class="w-full h-auto flex flex-wrap justify-evenly relative overflow-hidden">
+                <img class="w-[80%] h-auto relative " src="https://post.healthline.com/wp-content/uploads/2019/09/Home_Fitness_Stretch-1296x728-Header-1296x728.jpg" alt="">
+                <div class="w-[50%] h-auto bg-white absolute items-center bottom-2 top-[60%] ">
+                    <h2 class="text-black font-bold text-xl p-4 md:text-2xl pb-2  hover:text-orange-600 cursor-pointer ">
+                        30 Moves to Make the Most of Your At-Home
+                    Workout
+                    </h2>
+                    <p class="text-black-200 p-1 md:text-xl ">
+                        You can exercise at home without any equipment by practicing
+                    yoga poses and strength training. 
+                    </p>
+                </div>
+            </div>
+            <div class="w-full h-auto flex justify-evenly relative overflow-hidden">
+                <img class="w-[80%] h-auto relative " src="https://media.post.rvohealth.io/wp-content/uploads/2024/07/female-couch-phone-1296x728-header-1296x729.jpg" alt="">
+                <div class="w-[50%] h-auto bg-white absolute items-center bottom-2  top-[60%] ">
+                    <h2 class="text-black font-bold text-xl p-4 md:text-2xl  hover:text-orange-600 cursor-pointer ">‘Cortisol Face.’ The New Tik Tok Trend</h2>
+                    <p class="text-black-200 p-1 overflow-ellipsis  whitespace-wrap md:text-xl  ">
+                        In fact, the platform has
+                    been flooded with creators responding  impact stress has had.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-between ">
+            <div>
+                <p class="text-black-600 text-xl font-bold px-10 mt-10 md:text-3xl">EXPLORE BY</p>
+            </div>
+            <div>
+                <p class="text-black-600 text-xl font-bold px-10 mt-10 md:text-3xl">VIEW ALL</p>
+            </div>
+        </div>
+        <div class="w-full h-1 border-b-2 border-gray-400  p-4 "></div>
+        <div class="flex items-center justify-evenly flex-wrap">
+            <div class="flex  flex-col items-center">
+                <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/02/Explore_By-Nutrition.png?w=451&h=336" alt="">
+                <p class="text-black-600 text-2xl font-bold md:3xl  hover:text-orange-600 cursor-pointer">Nutrition</p>
+            </div>
+            <div class="flex  flex-col items-center">
+                <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/02/Explore_By-Sleep.png?w=451&h=336" alt="">
+                <p class="text-black-600 text-2xl font-bold md:text-3xl  hover:text-orange-600 cursor-pointer">Sleep</p>
+            </div>
+            <div class="flex  flex-col items-center">
+                <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/02/Explore_By-Mental_Health.png?w=451&h=336" alt="">
+                <p class="text-black-600 text-2xl font-bold md:text-3xl  hover:text-orange-600 cursor-pointer">Mental Health</p>
+            </div>
+            <div class="flex  flex-col items-center">
+                <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/02/Explore_By-Fitness.png?w=451&h=336" alt="">
+                <p class="text-black-600 text-2xl font-bold md:text-3xl  hover:text-orange-600 cursor-pointer">Fitness</p>
+            </div>
+            <div class="flex  flex-col items-center">
+                <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/02/Explore_By-Product_Reviews.png?w=451&h=336" alt="">
+                <p class="text-black-600 text-2xl font-bold md:text-3xl  hover:text-orange-600 cursor-pointer">Product Review</p>
+            </div>
+        </div>
+        <div>
+            <h1 class="text-black-900 text-3xl  px-10  pt-10 md:5xl md:font-bold  hover:text-orange-600 cursor-pointer">More on the topic you were reading</h1>
+        </div>
+        <div class="w-full h-1 border-b-2 border-gray-400  p-4 "></div>
+        <div class="  flex items-center justify-center ">
+            <div class="w-[90%]  bg-slate-50 flex justify-center items-center flex-col ">
+                <div class="flex justify-evenly items-center  mt-10 flex-wrap md:flex-nowrap">
+                    <div class="flex justify-evenly flex-col md:flex-row ">
+                        <img class="w-[100%] h-[250px]" src="https://media.post.rvohealth.io/wp-content/uploads/2024/04/hl-woman-doing-water-aerobics-732x549-thumbnail.jpg" alt="">
+                        <div>
+                            <h2 class="text-black-800 text-2xl flex-col p-2 md:text-3xl  hover:text-orange-600 cursor-pointer">
+                                The Best and Worst States for Women s Healthcar
+                            </h2>
+                            <p class="text-black-800 text-xl p-2  ">
+                                A new report details which states provide the highest and
+                        lowest quality healthcare for women. South Agency/Getty Images
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex  justify-evenly flex-col md:flex-row ">
+                        <img class="w-[100%] h-[250px]" src="https://media.post.rvohealth.io/wp-content/uploads/2022/08/chopping-and-prepping-vegetables-healthy-meal-732x549-thumbnail-732x549.jpg" alt="">
+                        <div>
+                            <h2 class="text-black-800 text-2xl p-2 md:3xl  hover:text-orange-600 cursor-pointer">How to Become the Boss of Your Emotions</h2>
+                            <p class="text-black-800 text-xl p-2  ">
+                                The ability to experience and express emotions is more
+                        important than you might realize.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-evenly items-center  mt-10 flex-wrap md:flex-nowrap md:items-center   ">
+                    <div class="flex flex-col md:flex-row ">
+                        <img class="w-[100%] h-[250px]  " src="https://media.post.rvohealth.io/wp-content/uploads/2020/09/avocado_salad-732x549-thumbnail-732x549.jpg" alt="">
+                        <div>
+                            <h2 class="text-black-800 text-2xl p-2 md:text-3xl  hover:text-orange-600 cursor-pointer">
+                                Want to Live to 100? How These Healthy Habits After 80 Can
+                        Help
+                            </h2>
+                            <p class="text-black-800 text-xl p-2  ">
+                                Medicare Advantage plans are a popular private insurance
+                        alternative to Medicare. However, there are some pros and cons to Medicare Advantage.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex  justify-evenly flex-col md:flex-row ">
+                        <img class="w-[100%] h-[250px]" src="https://media.post.rvohealth.io/wp-content/uploads/2024/06/man-taking-pill-with-glass-of-water-thumbnail.jpg" alt="">
+                        <div>
+                            <div>
+                                <h2 class="text-black-800 text-2xl p-2 md:text-3xl  hover:text-orange-600 cursor-pointer">
+                                    These 6 Health Risks Can Significantly Increase on Hot
+                            Days
+                                </h2>
+                            </div>
+                            <div>
+                                <p class="text-black-800 text-xl p-2 ">
+                                    When you were first diagnosed with high cholesterol, your
+                            doctor may have talked with you about exercise.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-black-800">
+            <h1 class="text-black-800 text-xl  mt-4 font-bold p-4 md:text-2xl  ">More Top Reader</h1>
+        </div>
+        <div class="w-full h-1 border-b-2 border-gray-400  "></div>
+        <div class="w-[100%] flex justify-evenly gap-10 mt-10 p-4 flex-wrap md:flex-nowrap sm:items-center ">
+            <div class="flex- flex-wrap ">
+                <img class="w[100%] " src="https://media.post.rvohealth.io/wp-content/uploads/2024/07/nurse-giving-iv-anesthesia-732-549-feature-thumb.jpg" alt="">
+                <p class="text-black-800 text-xl  md:text-2xl md:font-bold  hover:text-orange-600 cursor-pointer">
+                    How Many Different Types of Anesthesia Are There?
+                </p>
+            </div>
+            <div>
+                <img class="w-[100%]" src="https://media.post.rvohealth.io/wp-content/uploads/2024/07/ice-cream-roof-mouth-burn-732x549-thumbnail.jpg" alt="">
+                <p class="text-black-800 text-xl  md:text:2xl md:font-bold  hover:text-orange-600 cursor-pointer">
+                    How to Treat a Burn on the Roof of Your Mouth?
+                </p>
+            </div>
+            <div>
+                <img class="w-[100%]" src="https://media.post.rvohealth.io/wp-content/uploads/2024/07/pregnant-female-getting-vaccine-732-549-feature-thumb.jpg" alt="">
+                <p class="text-black-800 text-xl  md:2xl md:font-bold  hover:text-orange-600 cursor-pointer">
+                    Which COVID-19 Vaccine Is Best in 2024?
+                </p>
+            </div>
+            <div>
+                <img class="w-[100%]" src="https://media.post.rvohealth.io/wp-content/uploads/2024/07/woman-potty-training-child-on-toilet-732x549-thumbnail.jpg" alt="">
+                <p class="text-black-800 text-xl  md:2xl md:font-bold  hover:text-orange-600 cursor-pointer">
+                    Tips for Potty Training an Autistic Child.
+                </p>
+            </div>
+        </div>
+        <div class="w-[100]  relative">
+            <img class="w-[100%]  relative" src="https://www.investopedia.com/thmb/-HyumHLETJzwE4LOvRSbPDmDrT0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/health_care_sector.asp_Final-a32bc5773ace4e71b4e7dbbfd9b697f2.jpg" alt="">
+        </div>
+        <div class="flex items-center justify-between ">
+            <div>
+                <p class="text-black-600 text-xl font-bold px-10 mt-10 md:text-2xl">More Top Videos</p>
+            </div>
+            <div>
+                <p class="text-black-600 text-2xl font-bold px-10 mt-10 md:text-2xl">VIEW ALL</p>
+            </div>
+        </div>
+        <div class="w-full h-1 border-b-2 border-gray-400  "></div>
+        <!-- heerrrr -->
+        <div class="w-[100%] flex justify-center items-center mt-10 p-4 gap-4 md:mx-12 flex-wrap md:justify-evenly sm:justify-center">
+            <div>
+                <iframe
+                    width="360"
+                    class="w-[90%] md:w-[300px] "
+                    height="315"
+                    src="https://www.youtube.com/embed/LSR4pyiLfZQ"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <div>
+                <iframe
+                    width="360"
+                    class="w-[90%] md:w-[300px]"
+                    height="315"
+                    src="https://www.youtube.com/embed/WHujg-D9iTs"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <div>
+                <iframe
+                    width="360"
+                    class="w-[90%] md:w-[300px]"
+                    height="315"
+                    src="https://www.youtube.com/embed/E4EaRk6r_SM"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <div>
+                <iframe
+                    width="360"
+                    class="w-[90%] md:w-[300px]"
+                    height="315"
+                    src="https://www.youtube.com/embed/UvP8Lf1NRWs"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </div>
+        <div class="flex items-center justify-between ">
+            <div>
+                <p class="text-black-600 text-xl font-bold px-10 mt-10 md:text-2xl">HEALTH CONDITIONS</p>
+            </div>
+            <div>
+                <p class="text-black-600 text-xl font-bold px-10 mt-10 md:text-2xl">VIEW ALL</p>
+            </div>
+        </div>
+        <div class="w-full h-1 border-b-2 border-gray-400  "></div>
+        <!-- heath section -->
+        <div class="w-[100%] h-[30%] flex justify-center gap-10 mt-10 p-4 flex-wrap md:flex-nowrap  ">
+            <div class="w-[100%] ">
+                <img class="w[100%]  " src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/10/HL-Hub_Key_Art-T2D_600x900-Pinterest-copy-3.jpg?w=451&h=336" alt="">
+                <p class="text-black-800 font-bold text-xl h=[10%] md:text-2xl  hover:text-orange-600 cursor-pointer">Types 2 Diabets</p>
+            </div>
+            <div class="w-[100%] ">
+                <img class="w-[100%] " src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/10/HL-Hub_Key_Art-IBD-1_600x900-Pinterest-copy-2.jpg?w=451&h=336" alt="">
+                <p class="text-black-800 text-xl font-bold md:text-2xl  hover:text-orange-600 cursor-pointer ">
+                    Inflammatort
+                    <br>
+                    Bowel Disease
+                </p>
+            </div>
+            <div class="w-[100%] ">
+                <img class="w-[100%] " src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/10/HL-Hub_Key_Art-MS_600x900-Pinterest-copy-3.jpg?w=451&h=336" alt="">
+                <p class="text-black-800 text-xl  h=[10%] font-bold md:text-2xl  hover:text-orange-600 cursor-pointer ">
+                    Multiple Sclerosis
+                </p>
+            </div>
+            <div class="w-[100%]">
+                <img class="w-[100%] " src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/10/Breast-Cancer-Hub-crops-01.jpg?w=451&h=336" alt="">
+                <p class="text-black-800 text-xl  h=[10%] font-bold md:text-2xl  hover:text-orange-600 cursor-pointer ">
+                    Breast Cancer
+                </p>
+            </div>
+            <div class="w-[100%] ">
+                <img class="w-[100%] " src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/10/HL-Hub_Key_Art-RA_600x900-Pinterest-copy-3.jpg?w=451&h=336" alt="">
+                <p class="text-black-800 text-xl  h=[10%] font-bold md:text-2xl  hover:text-orange-600 cursor-pointer">Rheumatoid Arthritis</p>
+            </div>
+            <div class="w-[100%]">
+                <img class="w-[100%] h-[80%]" src="https://media.post.rvohealth.io/wp-content/uploads/2022/09/Migraine-Hub-hub-crop-700x350-1.jpg" alt="">
+                <p class="text-black-800 text-xl  h=[10%] font-bold md:2xl  hover:text-orange-600 cursor-pointer">
+                    Migraine
+                </p>
+            </div>
+        </div>
+        <div class="flex items-center justify-between ">
+            <div>
+                <p class="text-black-600 text-xl font-bold px-10 mt-10 md:text-2xl">PRODUCT REVIEW</p>
+            </div>
+            <div>
+                <p class="text-black-600 text-xl font-bold px-10 mt-10 md:tex-2xl">VIEW ALL</p>
+            </div>
+        </div>
+        <div class="w-full h-1 border-b-2 border-gray-400  "></div>
+        <div class="flex items-center justify-evenly flex-wrap ">
+            <div class="flex  flex-col items-center">
+                <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/04/Vitamins-Supplements-8.png?w=451&h=336" alt="">
+                <p class="text-black-600 text-2xl font-bold  hover:text-orange-600 cursor-pointer md:text-3xl">Vitamins & Supplements</p>
+            </div>
+            <div class="flex  flex-col items-center">
+                <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/04/Sleep-8.png?w=451&h=336" alt="">
+                <p class="text-black-600 text-2xl font-bold  hover:text-orange-600 cursor-pointer md:text-3xl">Sleep</p>
+            </div>
+            <div class="flex  flex-col items-center">
+                <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/04/Mental-Health-8.png?w=451&h=336" alt="">
+                <p class="text-black-600 text-2xl font-bold  hover:text-orange-600 cursor-pointer md:2xl">Mental Health</p>
+            </div>
+            <div class="flex  flex-col items-center">
+                <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/04/Nutrition-8.png?w=451&h=336" alt="">
+                <p class="text-black-600 text-2xl font-bold  hover:text-orange-600 cursor-pointer md:text-3xl">Nutrition</p>
+            </div>
+            <div class="flex  flex-col items-center">
+                <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2022/04/CBD-8.png?w=451&h=336" alt="">
+                <p class="text-black-600 text-2xl font-bold  hover:text-orange-600 cursor-pointer md:3xl">CBD</p>
+            </div>
+        </div>
+        <div class="flex items-center justify-between ">
+            <div>
+                <p class="text-black-600 text-xl font-bold px-10 mt-10 md:2xl">
+                    SPOTLIGHT
+                </div>
+            </div>
+            <div class="w-full h-1 border-b-2 border-gray-400  "></div>
+            <div class="w-[100%]  flex justify-evenly gap-10 mt-10 p-4  cursor-pointer hover:opacity-0.9 flex-wrap md:flex-nowrap  ">
+                <div class="flex- flex-wrap">
+                    <img class="w[100%] " src="https://media.post.rvohealth.io/wp-content/uploads/2024/05/hub_spotlight_parenthood_spons_600x900-2.jpg" alt="">
+                </div>
+                <div>
+                    <img class="w-[100%]" src="https://media.post.rvohealth.io/wp-content/uploads/2024/08/JUL-2024-UPDATED-Idiopathic-Hypersomnia-key-art-xywav-asset-600x900-1.png" alt="">
+                </div>
+                <div>
+                    <img class="w-[100%]" src="https://media.post.rvohealth.io/wp-content/uploads/2023/10/Templates-for-Spotlights-02.jpg" alt="">
+                </div>
+                <div>
+                    <img class="w-[100%]" src="https://media.post.rvohealth.io/wp-content/uploads/2024/01/HL-Sponsored_Program-Veterans_Care-Spotlight-900x600-Sponsored-1.png" alt="">
+                </div>
+            </div>
+            <div class="flex items-center justify-between ">
+                <div>
+                    <p class="text-black-600 text-xl font-bold px-10 mt-10 md:text-2xl">EXPLORE OUR SPONSORED TOPIC</p>
+                </div>
+                <div>
+                    <p class="text-black-600 text-xl font-bold px-10 mt-10 md:text-2xl">VIEW ALL</p>
+                </div>
+            </div>
+            <div class="w-full  border-b-2 border-gray-400  "></div>
+            <div class="max-w-[100%]  flex justify-evenly gap-10 mt-10 p-4 overflow-hidden text-2xl font-bold flex-wrap md:flex-nowrap  ">
+                <div class="w-[100%] h-[50%]">
+                    <img class="w[100%] sm:w-[100%] " src="https://media.post.rvohealth.io/wp-content/uploads/2023/01/HL-Lybalvi-Key-Art-732x549-1.png" alt="">
+                    <P class=" hover:text-orange-600 cursor-pointer">knowlege Matters with Bipolar I</P>
+                </div>
+                <div class="w-[100%] h-[50%]">
+                    <img class="w-[100%] sm:w-[100%]" src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/11/vezenio-thumb-image.jpg?w=451&h=336" alt="">
+                    <p class="hover:text-orange-600 cursor-pointer">knowlege is Power with Early Breast Cancer</p>
+                </div>
+                <div class="w-[100%] h-[50%]">
+                    <img class="w-[100%] sm:w-[100%] " src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/11/HL-Program-Landing-Page-%E2%80%93-Trelegy-Moving-Forward-with-Advanced-COPD-732x549-Large_Thumbnail.jpg?w=451&h=336" alt="">
+                    <p class="hover:text-orange-600 cursor-pointer">Moving Forward With Advance COPD</p>
+                </div>
+                <div class="w-[100%] h-[50%]">
+                    <img class="w-[100%] sm:w-[100%]" src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2021/10/No-Pheum-HL_keyart_program_thumb_732x549.jpg?w=451&h=336" alt="">
+                    <p class="hover:text-orange-600 cursor-pointer"> No Rheum For RA Pain</p>
+                </div>
+            </div>
+            <div class="w-[100%] bg-orange-100 py-10 flex lg:justify-between lg:items-center flex-col lg:flex-row ">
+                <div class="lg:w-[40%] bg-orange-100 flex flex-col  lg:pl-32   p-4 gap-4">
+                    <div class=" text-black-800 text-3xl font-bold flex  gap-10 mt-4 mb-10 flex-wrap flex-col md:flex-row ">
+                        <h1>healthline</h1>
+                        <div class="flex justify-center  gap-4 ">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-solid fa-p"></i>
+                        </div>
+                        <div class="flxe justify-center  ">
+                            <h2 class="text-balck-800 text-[20px]  md:text-2xl  ">Get our wellness newsletter</h2>
+                            <p class="text-black-700 text-[20px] md:text-xl  ">
+                                Filter out the noise and nurture your inbox with health and wellness
+                                <br>
+                                advice that's inclusive and rooted in medical expertise.
+                            </p>
+                            <div class="flex items-center w-full justify-start  md:mx-0  ">
+                                <input type="text" class="h-10 " placeholder="Enter your email">
+                                <button class="text-white bg-teal-700 h-10 text-xl items-center  w-24">SIGN UP</button>
+                            </div>
+                            <p class="text-black-700 text-[15px]">Your privacy is important to us</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-col lg:flex-row flex lg:w-[70%] justify-between gap-10 mt-10 ">
+                    <div class="flex lg:justify-center items-center  ">
+                        <div class="lg:mx-0 mx-10  flex flex-col text-black-700 text-xl gap-4 lg:justify-center  mt-10">
+                            <p>About Us</p>
+                            <p>Contact Us</p>
+                            <p>Privacy Policy</p>
+                            <p>Privacy Settings</p>
+                            <p>Advertising Policy</p>
+                            <p>Health Topics</p>
+                        </div>
+                    </div>
+                    <div class=" flex flex-col gap-10 text-black-700 text-xl justify-center items-cnter ">
+                        <div class="flex flex-col gap-4 mx-10  ">
+                            <p>Sitemap</p>
+                            <p>Medical Affairs</p>
+                            <p>Content Integrity</p>
+                            <p>Newsletters</p>
+                            <div class="bg-orange-100 text-black-800  text-[15px] flex  text-black-800 text-center right-0 bottom-0 -top-10  ">
+                                © 2024 Healthline Media LLC. All rights reserved. Our
+                            
+                            website services, content, and products are for
+                        
+                            informational purposes only. Healthline Media does not
+                            
+                            provide medical advice, diagnosis, or treatment. See
+                            
+                            additional information. See additional information.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full bg-black flex  justify-evenly  flex-wrap   relative ">
+                <div CLASS="flex flex-col  items-center   ">
+                    <button class="bg-white text-6xl rounded-full w-11  ">h</button>
+                    <h1 class="text-white">HEALTHLINE MEDIA</h1>
+                </div>
+                <div class=" flex flex-col items- center justify-center flex-wrap  ">
+                    <ul class=" flex gap-5 text-white  justify-center  md:flex-row">
+                        <li>About</li>
+                        <li>|</li>
+                        <li>Carers</li>
+                        <li>|</li>
+                        <li>Advertise with us</li>
+                    </ul>
+                    <div class="flex gap-4 flex-col  items-center justify-center md:flex-row">
+                        <h1 class="text-white text- xl font-bold flex-col md:flex-row ">OUR BRANDS</h1>
+                        <ul class=" flex  items-center justify-center flex-col md:flex-row md:gap-2 ">
+                            <li class="text-white">
+                                Healthline
+                                <hr>
+                            </li>
+                            <li class="text-white">
+                                Medical News to day
+                                <hr>
+                            </li>
+                            <li class="text-white">
+                                Greatist
+                                <hr>
+                            </li>
+                            <li class="text-white">
+                                psych central
+                                <hr>
+                            </li>
+                            <li class="text-white">
+                                Bezzy
+                                <hr>
+                            </li>
+                            <!-- <button class="text-sky-500 w-40 h-20 border-b-2 rounded-full bg-white text-xl absolute  flex flex-col " >@ TRUST <br></button> -->
+                        </div>
+                    </div>
+                </div>
+            </body>
+        </html>
